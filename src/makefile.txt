@@ -1,0 +1,10 @@
+JCC = javac
+JFLAGS = -g
+
+default: hashtagcounter.class
+
+hashtagcounter.class: hashtagcounter.java
+	$(JCC) $(JFLAGS) hashtagcounter.java
+
+clean:
+	$(RM) *.class
